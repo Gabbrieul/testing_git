@@ -1,0 +1,1 @@
+input("Type the shift number:\n"))
