@@ -493,3 +493,122 @@
 
 # print(is_prime(73))
 # print(is_prime(75))
+
+# import random 
+
+# def escolha_dificuldade ():
+#     """"fazer o jogador determinar qual a o numero de vidas que vai ter no jogo"""
+#     while True:
+#         choice = input("Escolha dificuldade, entre:\nFacil ou Dificil\n").lower().strip()
+#         if choice == 'facil':
+#             return 10
+#         elif choice == "dificil":
+#             return 5
+#         elif choice != 'facil' and choice != "dificil":
+#             print("Voce tentou uma opção invalida, digite novamente")
+#             print('\n')
+
+
+
+# def lista_numeros():
+#     '''''poderia ser random.randint(1,100)
+#         mas fiquei feliz de pensar na ideia de construir uma lista com os numeros e nao digitar um a um 
+#         ta bom mas da pra melhorar'''
+#     lista = []
+#     for i in range(1,101):
+#         lista.append(i)
+#     return lista
+
+# def jogador_joga(vidas,numero):
+#     """""logica do jogo
+#         acredito que fazer uma função pra isso ajuda, nao sei ao certo o porque, mas ajuda
+#         """
+#     chute = 0 
+#     while chute != numero and vidas > 0:
+#         chute = int(input("Make a guess:   \n"))
+#         if numero < chute:
+#             print(f"too high\n guess again\n")
+#             vidas -= 1
+#             print(F"voce tem **{vidas}** tentativas restantes ")
+#             continue
+#         elif numero > chute:
+#             print(f"too low\n guess again\n")
+#             vidas -= 1
+#             print(F"voce tem **{vidas}** tentativas restantes ")
+#             continue
+#         elif numero == chute:
+#             print(f"voce acertou, a resposta era: {chute}")
+#             break
+#     print(f"as suas vidas acabaram, resposta era: {numero}")
+            
+# def jogo_funciona():
+#     print("bem vind ao jogo de advinhar o numero que o computador escolheu entre 1 e 100\n**se voce escolher facil voce tem 10 chances\n**se voce escolher dificil voce tem 5")
+#     lista_numeros()
+#     numero_escolhido = int(random.choice(lista_numeros()))
+#     #numero_escolhido = random.randint(1,100)
+#     escolha_jogador = escolha_dificuldade()
+#     jogador_joga(escolha_jogador,numero_escolhido)
+
+# jogo_funciona()
+
+
+# def bug_function():
+#     for i in range(1,21):
+#         # i += 1
+#         if i == 20:
+#             print("you got it ")
+
+# bug_function()
+
+# from random import randint
+
+# dice_images = ['1','2','3','4','5','6']
+# dice_num = randint(1,6)
+# print(dice_images[dice_num])
+
+# """"" bug ta acontecendo pq o teto do randint 6, nao equivale ao endereço no ultimo termo dentro da lista
+#         portanto quando chega ao ultimo endereço da lista nao encontra termo nenhum, assim gerando o bug
+#             como fazer isso sempre acontecer? ::: dice_num = 6
+#             como consertar: 5 substitui 6 ou randint
+#                             0 susbtitui o 1
+#                             (len[array])"""
+
+
+# import maths
+# import random
+
+# def mutate(a_list):
+#     b_list = []
+#     new_item = 0
+#     for item in a_list:
+#         new_item = item * 2
+#         new_item += random.randint(1,3)
+#         new_item = maths.add(new_item,item)
+#     b_list.append(new_item)
+#     print(b_list)
+
+# test_list = [1,2,3,5,8,13]
+
+# mutate(test_list)
+
+# def odd_or_even(number):
+#     if number % 2 == 0:
+#         return "This is an even number."
+#     else:
+#         return "This is an odd number."
+
+# Target is the number up to which we count
+# def fizz_buzz(target):
+#     final_number = target + 1
+#     for number in range(1,final_number):
+#         if number % 3 == 0 and number % 5 == 0:
+#             print("FizzBuzz")
+#         elif number % 3 == 0:
+#             print("Fizz")
+#         elif number % 5 == 0:
+#             print("Buzz")
+#         else:
+#             print([number])
+
+# fizz_buzz(15)
+

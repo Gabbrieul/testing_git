@@ -587,5 +587,51 @@
     
 # print(is_prime(75))
 
+# import random 
 
-    
+
+# def lista_numeros():
+#     lista = []
+#     for i in range(1,101):
+#         lista.append(i)
+#     return lista
+
+# # print(lista_numeros())
+
+# numero_escolhido = random.choice(lista_numeros())
+# print(numero_escolhido)
+
+import dados_externos
+import random
+
+# print(dados_externos.famous_data[1])
+# print(dados_externos.famous_data[1])
+
+
+# def acessar_item_aleatorio_da_lista(lista):
+#     return lista[random.randint(0,len(lista) + 1)]
+
+# print(acessar_item_aleatorio_da_lista(dados_externos.famous_data))
+
+
+# def numero_de_seguidores(dicionario):
+
+
+#TESTANDO COISAS DE DICIONARIO
+
+# DICIONARIO = {'asa':"PRIMEIRO", 'baca':"SEGUNDO", 'xaca':"TERCEIRO"}
+
+# print(DICIONARIO)
+
+# print(DICIONARIO(0))
+
+
+d = {
+    "nome": "Alice",
+    "idade": 30,
+    "pais": "BR"
+}
+
+for valor in d.values():
+    print(valor)
+

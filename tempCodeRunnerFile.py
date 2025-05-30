@@ -1,1 +1,1 @@
-input("Type the shift number:\n"))
+print(DICIONARIO[0])
